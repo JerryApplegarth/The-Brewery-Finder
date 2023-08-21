@@ -39,12 +39,12 @@ main {
   flex-grow: 1;
   color: hsl(28, 37%, 23%);
   background-color: rgba(100, 100, 43, 0.1);
-  border: 1px solid hsl(28, 37%, 23%);
+  border: 1px solid hsl(25, 100%, 49%);
   border-radius: 10px;
   box-shadow: 1px 1px 2.5px hsl(0, 0%, 100%);
 }
 
-i .main__h1 {
+.main__h1 {
   font-family: "Oleo Script Swash Caps", cursive;
   color: #ddb967;
 }
@@ -52,20 +52,33 @@ i .main__h1 {
 hr {
   width: 90%;
   margin-top: 10px;
+  margin-bottom: 10px;
   margin-inline: auto;
-  border: 1px solid hsl(28, 37%, 23%);
+  border: 1px solid hsl(25, 100%, 49%);
 }
 
 nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   list-style: none;
 }
 nav li {
   display: inline-block;
 }
 nav a {
+  border: 1px solid red;
+  color: hsl(26, 88%, 55%);
   display: block;
   padding: 6px 12px;
   text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+  background-color: hsl(26, 88%, 55%);
+  color: hsl(74, 31%, 84%);
+  text-decoration: underline;
+  border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */
