@@ -67,10 +67,9 @@ nav {
 	}
 
 	a {
-		border: 1px solid red;
 		color: $a-text-color;
 		display: block;
-		padding: 6px 12px;
+		padding: 4px 8px;
 		text-decoration: none;
 	}
 	a:hover,
@@ -80,4 +79,7 @@ nav {
 		text-decoration: underline;
 		border-radius: 6px;
 	}
+}
+.main__a {
+	color: $a-text-color;
 }

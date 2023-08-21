@@ -69,10 +69,9 @@ nav li {
   display: inline-block;
 }
 nav a {
-  border: 1px solid red;
   color: hsl(26, 88%, 55%);
   display: block;
-  padding: 6px 12px;
+  padding: 4px 8px;
   text-decoration: none;
 }
 nav a:hover,
@@ -81,4 +80,8 @@ nav a:focus {
   color: hsl(74, 31%, 84%);
   text-decoration: underline;
   border-radius: 6px;
+}
+
+.main__a {
+  color: hsl(26, 88%, 55%);
 }/*# sourceMappingURL=style.css.map */
