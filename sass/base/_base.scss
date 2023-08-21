@@ -25,7 +25,9 @@ body {
 	padding: 0.5rem;
 }
 
-main {
+.main,
+.main_zip,
+.main_state {
 	width: 100%;
 	max-width: 800px;
 	max-height: 1050px;
@@ -37,27 +39,35 @@ main {
 	border: 1px solid $bordercolor;
 	border-radius: 10px;
 	box-shadow: 1px 1px 2.5px $shadowcolor;
+
+	.main__h1 {
+		font-family: 'Oleo Script Swash Caps', cursive;
+		color: $h1-color;
+	}
 }
 
-i .main__h1 {
-	font-family: 'Oleo Script Swash Caps', cursive;
-	color: $h1-color;
-}
+nav {
+	ul {
+		background-color: $a-background-color;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 
-hr {
-	width: 90%;
-	margin-top: 10px;
-	margin-inline: auto;
-	border: 1px solid $bordercolor;
-}
-ul,
-ol {
-	list-style: none;
-}
-a {
-	text-decoration: none;
-	color: $link-color;
-}
-a:hover {
-	text-decoration: underline;
+	li {
+		color: $a-text-color;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	a {
+		display: block;
+		padding: 6px 12px;
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:focus {
+		background-color: $hover-color;
+	}
 }
