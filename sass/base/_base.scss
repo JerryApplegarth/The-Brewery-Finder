@@ -41,7 +41,7 @@ main {
 
 .main__h1 {
 	font-family: 'Oleo Script Swash Caps', cursive;
-	color: $h1-color;
+	color: $font-color;
 }
 
 hr {
@@ -82,4 +82,23 @@ nav {
 }
 .main__a {
 	color: $a-text-color;
+}
+
+.main__p {
+	font-size: 0.75rem;
+}
+
+// Zip Code Page
+
+.container__input {
+	font-size: inherit;
+	width: 20%;
+	margin-top: 10px;
+	padding: 6px 6px;
+	border-radius: 6px;
+}
+.btn {
+	font-size: inherit;
+	border-radius: 6px;
+	padding: 6px 12px;
 }

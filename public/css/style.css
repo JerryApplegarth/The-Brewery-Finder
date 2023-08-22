@@ -9,7 +9,7 @@ html {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
-  color: hsl(28, 37%, 23%);
+  color: hsl(28, 91%, 22%);
 }
 @media only screen and (min-width: 768px) {
   html {
@@ -37,7 +37,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  color: hsl(28, 37%, 23%);
+  color: hsl(28, 91%, 22%);
   background-color: rgba(100, 100, 43, 0.1);
   border: 1px solid hsl(25, 100%, 49%);
   border-radius: 10px;
@@ -46,7 +46,7 @@ main {
 
 .main__h1 {
   font-family: "Oleo Script Swash Caps", cursive;
-  color: #ddb967;
+  color: hsl(28, 91%, 22%);
 }
 
 hr {
@@ -84,4 +84,22 @@ nav a:focus {
 
 .main__a {
   color: hsl(26, 88%, 55%);
+}
+
+.main__p {
+  font-size: 0.75rem;
+}
+
+.container__input {
+  font-size: inherit;
+  width: 20%;
+  margin-top: 10px;
+  padding: 6px 6px;
+  border-radius: 6px;
+}
+
+.btn {
+  font-size: inherit;
+  border-radius: 6px;
+  padding: 6px 12px;
 }/*# sourceMappingURL=style.css.map */
