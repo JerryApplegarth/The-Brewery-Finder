@@ -14,14 +14,21 @@ function request(userInput) {
 			data.forEach((brewery) => {
 				const breweryName = `
                 <br/>
-                ${brewery.name}
-                <br/>${brewery.brewery_type}
-                <br/>${brewery.street}
-                <br/>${brewery.city}
-                <br/>${brewery.postal_code}
-                <br/>${brewery.state}
-                <br/>${brewery.phone}
-                <br/>${brewery.website_url}
+                Name: ${brewery.name}
+                <br/>
+				Type: ${brewery.brewery_type}
+                <br/>
+				Street: ${brewery.street}
+                <br/>
+				City: ${brewery.city}
+                <br/>
+				Zip Code: ${brewery.postal_code}
+                <br/>
+				State: ${brewery.state}
+                <br/>
+				Phone: ${brewery.phone}
+                <br/>
+				Website: ${brewery.website_url}
                 <hr/>
                 `;
 				document
