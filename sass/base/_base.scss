@@ -28,7 +28,7 @@ body {
 main {
 	width: 100%;
 	max-width: 800px;
-	max-height: 1050px;
+	max-height: 100%vh;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -93,6 +93,7 @@ nav {
 .container__input {
 	font-size: inherit;
 	width: 20%;
+
 	margin-top: 10px;
 	padding: 6px 6px;
 	border-radius: 6px;
