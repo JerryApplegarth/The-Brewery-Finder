@@ -35,6 +35,11 @@ function request(userInput) {
 					.querySelector('#p_class')
 					.insertAdjacentHTML('beforeend', breweryName);
 			});
+			const clearBtn = document.querySelector('#clear');
+			clearBtn.addEventListener('click', () => {
+				document.querySelector('#p_class').innerHTML = '';
+				document.querySelector('#zip-input').value = '';
+			});
 		})
 		.catch((error) => {
 			`Error: ${error}`;
