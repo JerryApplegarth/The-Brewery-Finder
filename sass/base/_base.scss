@@ -104,3 +104,9 @@ nav {
 	padding: 6px 12px;
 	cursor: pointer;
 }
+.btn:hover,
+.btn:focus {
+	background-color: $background-color;
+	color: $font-color;
+	text-decoration: underline;
+}
