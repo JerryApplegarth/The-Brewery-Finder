@@ -2,6 +2,17 @@
 
 document.querySelector('#btn').addEventListener('click', () => {
 	const userInput = document.querySelector('#zip-input');
+
+	const clearBtn = document.querySelector('#clear');
+
+	// if (userInput.value === '') {
+	// 	document.querySelector('#p_class').innerHTML = 'Add zip code';
+	// 	return;
+	// }
+	if (userInput.value.length !== 5) {
+		document.querySelector('#p_class').innerHTML = 'Invalid zip code';
+		return;
+	}
 	request(userInput.value);
 });
 
@@ -34,6 +45,8 @@ function request(userInput) {
 				document
 					.querySelector('#p_class')
 					.insertAdjacentHTML('beforeend', breweryName);
+				document.querySelector('#zip-input').value = '';
+				// document.querySelector('#p_class').innerHTML = '';
 			});
 			const clearBtn = document.querySelector('#clear');
 			clearBtn.addEventListener('click', () => {
